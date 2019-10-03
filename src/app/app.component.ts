@@ -78,8 +78,8 @@ export class AppComponent implements OnInit {
 
   newVideoObj = {
     name: "video7.mp4",
-    description: "Spring Boot microservice",
-    keyword: "spring boot",
+    description: "Superstars believe in Cloud",
+    keyword: "Superstars",
     views: 0,
     uploadedOn: "Just now",
     imageName: "image7.jpg"
