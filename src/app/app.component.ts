@@ -89,7 +89,7 @@ export class AppComponent implements OnInit {
     this.videoList.push(this.newVideoObj);
     setInterval(()=>{ 
       var video = document.createElement('video');
-      video.src = 'https://angulardemoendpoint.azureedge.net/angulardemocont/'+this.newVideoObj.name;
+      video.src = 'https://learningbytecdnendpoint.azureedge.net/angulardemocont/'+this.newVideoObj.name;
       video.oncanplaythrough = () => {
         this.showNewVideo = true;
         console.log("oncanplaythrough");
