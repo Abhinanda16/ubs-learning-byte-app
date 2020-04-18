@@ -99,8 +99,8 @@
                       <h4>Recommended videos</h4>
                     </div>
                 <div class="blockConatiner" *ngFor="let video of recommendedVideoList() | slice:0:2; let i=index">
-                    <video id={{video.name}} controls poster='https://angulardemoendpoint.azureedge.net/angulardemocont/{{video.imageName}}'>
-                        <source src='https://angulardemoendpoint.azureedge.net/angulardemocont/{{video.name}}' type="video/mp4">
+                    <video id={{video.name}} controls poster='https://learningbytecdnendpoint.azureedge.net/{{video.imageName}}'>
+                        <source src='https://learningbytecdnendpoint.azureedge.net/{{video.name}}' type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                     <div>
@@ -115,8 +115,8 @@
                     <h4>Trending videos</h4>
                   </div>
                   <div class="blockConatiner" *ngFor="let video of sortedVideoList() | slice:0:4; let i=index">
-                    <video id={{video.name}} controls (playing)="onVideoClick(video)" poster='https://angulardemoendpoint.azureedge.net/angulardemocont/{{video.imageName}}'>
-                        <source src='https://angulardemoendpoint.azureedge.net/angulardemocont/{{video.name}}' type="video/mp4">
+                    <video id={{video.name}} controls (playing)="onVideoClick(video)" poster='https://learningbytecdnendpoint.azureedge.net/{{video.imageName}}'>
+                        <source src='https://learningbytecdnendpoint.azureedge.net/{{video.name}}' type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                     <div>
@@ -132,8 +132,8 @@
                 </div>
                 <ng-container *ngIf="showNewVideo">
                 <div class="blockConatiner" *ngFor="let video of newlyAddedVideoList() | slice:0:4; let i=index">
-                  <video id={{video.name}} controls (playing)="onVideoClick(video)" poster='https://angulardemoendpoint.azureedge.net/angulardemocont/{{video.imageName}}'>
-                      <source src='https://angulardemoendpoint.azureedge.net/angulardemocont/{{video.name}}' type="video/mp4">
+                  <video id={{video.name}} controls (playing)="onVideoClick(video)" poster='https://learningbytecdnendpoint.azureedge.net/{{video.imageName}}'>
+                      <source src='https://learningbytecdnendpoint.azureedge.net/{{video.name}}' type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                   <div>
