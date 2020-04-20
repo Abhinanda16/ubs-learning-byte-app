@@ -12,54 +12,6 @@ export class AppComponent implements OnInit {
   videoList = [
     {
       name: "video1.mp4",
-      description: "Angular Lazy Loading Component",
-      keyword: "angular",
-      views: 120,
-      uploadedOn: "1 month ago",
-      imageName: "image1.jpg"
-    },
-    {
-      name: "video2.mp4",
-      description: "Angular tutorial for beginners",
-      keyword: "angular",
-      views: 30,
-      uploadedOn: "1 month ago",
-      imageName: "image2.jpg"
-    },
-    {
-      name: "video3.mp4",
-      description: "React redux getting started",
-      keyword: "react",
-      views: 120,
-      uploadedOn: "2 month ago",
-      imageName: "image3.jpg"
-    },
-    {
-      name: "video4.mp4",
-      description: "React component lifecycle",
-      keyword: "react",
-      views: 50,
-      uploadedOn: "2 month ago",
-      imageName: "image4.jpg"
-    },
-    {
-      name: "video5.mp4",
-      description: "Spring Boot advantages",
-      keyword: "spring boot",
-      views: 70,
-      uploadedOn: "3 month ago",
-      imageName: "image5.jpg"
-    },
-    {
-      name: "video6.mp4",
-      description: "Spring Boot jpa",
-      keyword: "spring boot",
-      views: 10,
-      uploadedOn: "3 month ago",
-      imageName: "image6.jpg"
-    },
-    {
-      name: "video8.mp4",
       description: "How does Azure work?",
       keyword: "azure",
       views: 70,
@@ -67,29 +19,77 @@ export class AppComponent implements OnInit {
       imageName: "image8.jpg"
     },
     {
-      name: "video9.mp4",
-      description: "Azure as PAAS",
+      name: "video2.mp4",
+      description: "AWS VS Azure",
       keyword: "azure",
-      views: 5,
+      views: 30,
+      uploadedOn: "1 month ago",
+      imageName: "image2.jpg"
+    },
+    {
+      name: "video3.mp4",
+      description: "Learn Angular",
+      keyword: "angular",
+      views: 20,
+      uploadedOn: "2 month ago",
+      imageName: "image3.jpg"
+    },
+    {
+      name: "video4.mp4",
+      description: "Cloud Computing",
+      keyword: "Cloud",
+      views: 50,
+      uploadedOn: "2 month ago",
+      imageName: "image4.jpg"
+    },
+    {
+      name: "video5.mp4",
+      description: "What is Container",
+      keyword: "Container",
+      views: 70,
+      uploadedOn: "1 month ago",
+      imageName: "image5.jpg"
+    },
+    {
+      name: "video6.mp4",
+      description: "Kubernates vs Docker",
+      keyword: "Container",
+      views: 10,
+      uploadedOn: "7 days ago",
+      imageName: "image6.jpg"
+    },
+    {
+      name: "video7.mp4",
+      description: "Kubernates Overview",
+      keyword: "Container",
+      views: 90,
+      uploadedOn: "1 month ago",
+      imageName: "image7.jpg"
+    },
+    {
+      name: "video9.mp4",
+      description: "What is Azure",
+      keyword: "azure",
+      views: 10,
       uploadedOn: "3 days ago",
       imageName: "image9.jpg"
     }
   ];
 
   newVideoObj = {
-    name: "video7.mp4",
-    description: "Superstars believe in Cloud",
-    keyword: "Superstars",
+    name: "video8.mp4",
+    description: "hadoop",
+    keyword: "Container",
     views: 0,
     uploadedOn: "Just now",
-    imageName: "image7.jpg"
+    imageName: "image8.jpg"
   };
 
   ngOnInit() {
     this.videoList.push(this.newVideoObj);
     setInterval(()=>{ 
       var video = document.createElement('video');
-      video.src = 'https://learningbytecdnendpoint.azureedge.net/learningbytecontainer/'+this.newVideoObj.name;
+      video.src = 'https://learningbytecdnendpoint.azureedge.net/'+this.newVideoObj.name;
       video.oncanplaythrough = () => {
         this.showNewVideo = true;
         console.log("oncanplaythrough");
